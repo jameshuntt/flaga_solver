@@ -1,0 +1,20 @@
+[package]
+name = "flaga_solver"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["James Hunt"]
+repository = "https://github.com/jameshuntt/flaga_solver"
+readme = "README.md"
+description = "Constraint solver over big-bad-bool packed-word schemas: reserved, invalid, requires, conflicts, deprecated, plus allow/deny policy words, with a reason for every refusal."
+keywords = ["flags", "bitfield", "policy", "capability", "solver"]
+categories = ["data-structures", "no-std"]
+
+[dependencies]
+big-bad-bool-core = { version = "0.1.1", default-features = false }
+
+[dev-dependencies]
+big-bad-bool = "0.1"
+
+[lints.rust]
+unsafe_code = "forbid"
