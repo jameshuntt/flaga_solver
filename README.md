@@ -79,6 +79,11 @@ for the derive in the tests.
 - `authorize` cases: allowed, denied over allowed, missing, malformed;
 - the crate-level doctest.
 
+## Releasing
+
+Bump `version` in Cargo.toml, add a dated `## <version> (YYYY-MM-DD)` entry to CHANGELOG.md, and push to
+`main`. CI (.github/workflows/ci.yml) runs the tests and clippy, then publishes that version to crates.io.
+
 ## License
 
 MIT OR Apache-2.0, at your option. See `LICENSE-MIT` and `LICENSE-APACHE`.
